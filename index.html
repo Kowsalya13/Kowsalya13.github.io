@@ -1,140 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Kowsalya Kumar | DevSecOps Engineer</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <link rel="stylesheet" href="styles.css">
 
-        body {
-            font-family: Inter, Arial, sans-serif;
-            background: #0f172a;
-            color: #e2e8f0;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 80px 30px;
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: #38bdf8;
-            margin-bottom: 25px;
-        }
-
-        .intro {
-            font-size: 1.1rem;
-            color: #cbd5e1;
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            margin-top: 40px;
-            margin-bottom: 15px;
-            color: #38bdf8;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill {
-            background: #1e293b;
-            padding: 10px 15px;
-            border-radius: 8px;
-        }
-
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .links {
-            margin-top: 15px;
-        }
-
-        .links a {
-            margin-right: 20px;
-        }
-
-        footer {
-            margin-top: 60px;
-            color: #94a3b8;
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
 
-<div class="container">
-
-    <h1>Kowsalya Kumar</h1>
-
-    <p class="subtitle">
-        DevSecOps Engineer • Cloud • Kubernetes • Automation
-    </p>
-
-    <p class="intro">
-        Building reliable cloud platforms, automating delivery pipelines,
-        and integrating security throughout the software development lifecycle.
-    </p>
-
-    <h2>About Me</h2>
-
-    <p>
-        I am a DevSecOps Engineer with experience in cloud infrastructure,
-        Kubernetes, CI/CD, automation, and platform engineering.
-        I enjoy solving operational challenges and building scalable,
-        secure systems that enable development teams to move faster.
-    </p>
-
-    <h2>Skills</h2>
-
-    <div class="skills">
-        <div class="skill">AWS</div>
-        <div class="skill">Kubernetes</div>
-        <div class="skill">Docker</div>
-        <div class="skill">Jenkins</div>
-        <div class="skill">Terraform</div>
-        <div class="skill">GitOps</div>
-        <div class="skill">Linux</div>
-        <div class="skill">Networking</div>
-        <div class="skill">DevSecOps</div>
+    <div id="boot-screen">
+        <div id="boot-lines"></div>
+        <span class="boot-cursor">_</span>
     </div>
 
-    <h2>Connect</h2>
+    <div class="background-grid"></div>
 
-    <div class="links">
-        <a href="https://github.com/Kowsalya13" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/kowsalya-kumar-46672223b" target="_blank">LinkedIn</a>
+    <div class="layout">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+                <span class="terminal-prompt">
+                    kowsalya@devsecops:~$<span class="cursor"> _</span>
+                </span>
+            </div>
+
+            <nav class="sidebar-nav">
+
+                <a class="active" href="#home">
+                    [01] HOME
+                </a>
+
+                <a href="#about">
+                    [02] ABOUT
+                </a>
+
+                <a href="#skills">
+                    [03] SKILLS
+                </a>
+
+                <a href="#experience">
+                    [04] EXPERIENCE
+                </a>
+
+                <a href="#projects">
+                    [05] PROJECTS
+                </a>
+
+                <a href="#certifications">
+                    [06] CERTIFICATIONS
+                </a>
+
+                <a href="#connect">
+                    [07] CONNECT
+                </a>
+
+            </nav>
+
+            <div class="sidebar-card">
+
+                <div class="card-title">
+                    > whoami.txt
+                </div>
+
+                <p><span class="wc">✓</span> builds pipelines</p>
+                <p><span class="wc">✓</span> secures the stack</p>
+                <p><span class="wc">✓</span> tames Kubernetes</p>
+                <p><span class="wc">✓</span> automates the rest</p>
+                <p><span class="wc">✓</span> vibes with AI, calls the shots</p>
+
+            </div>
+
+            <div class="social-icons">
+
+                <a href="https://github.com/Kowsalya13"
+                    target="_blank">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/kowsalya-kumar-46672223b"
+                    target="_blank">
+
+                    <i class="fab fa-linkedin"></i>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+        <!-- MAIN CONTENT -->
+
+        <main class="content">
+
+            <section id="home">
+
+                <div class="command">
+                    > ./whoami
+                </div>
+
+                <h1>
+                    <span class="glitch" data-text="Kowsalya Kumar">Kowsalya Kumar</span>
+                    <span class="cursor">_</span>
+                </h1>
+
+                <h2>
+                    DevSecOps Engineer
+                </h2>
+
+                <p class="tags">
+                    AWS · Kubernetes · CI/CD · Jenkins · ArgoCD (GitOps) · SecOps · Platform Engineering · IaC
+                </p>
+
+                <p class="intro">
+
+                    Engineering production-grade cloud-native platforms —
+                    operationalizing GitOps-driven delivery models,
+                    automating infrastructure at scale, and embedding
+                    security controls throughout the software supply chain.
+
+                </p>
+
+            </section>
+
+            <section id="about">
+
+                <h3>> about.txt</h3>
+
+                <div class="content-card">
+
+                    <p>
+
+                        A platform engineer with roots in full-stack development,
+                        specializing in cloud-native architecture, Kubernetes
+                        ecosystem design, and DevSecOps enablement at scale.
+
+                    </p>
+
+                    <br>
+
+                    <p>
+
+                        Experienced in translating operational requirements into
+                        automated, policy-driven infrastructure solutions — from
+                        CI/CD pipeline architecture and developer platform tooling
+                        to security integration across the software delivery
+                        lifecycle.
+
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section id="skills">
+
+                <h3>> skills.list</h3>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <i class="fab fa-aws"></i>
+                        AWS
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fas fa-gears"></i>
+                        CI/CD · Jenkins
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fas fa-dharmachakra"></i>
+                        Kubernetes
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fab fa-docker"></i>
+                        Docker
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fas fa-code-branch"></i>
+                        ArgoCD · GitOps
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fas fa-shield-halved"></i>
+                        DevSecOps
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fas fa-server"></i>
+                        Platform Engineering
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fab fa-linux"></i>
+                        Linux
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fas fa-network-wired"></i>
+                        Networking
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fas fa-cubes"></i>
+                        Terraform
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="experience">
+
+                <h3>> experience.log</h3>
+
+                <div class="content-card">
+
+                    <ul>
+
+                        <li>Cloud-Native Platform Engineering</li>
+
+                        <li>CI/CD Pipeline Architecture & Developer Platform Engineering</li>
+
+                        <li>Kubernetes Cluster Lifecycle Management & Workload Orchestration</li>
+
+                        <li>GitOps-Driven Delivery Automation (ArgoCD)</li>
+
+                        <li>DevSecOps — Shift-Left Security, Policy Enforcement & SAST Integration</li>
+
+                        <li>Infrastructure Automation & IaC (Terraform)</li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <section id="projects">
+
+                <h3>> projects.show</h3>
+
+                <div class="projects-grid">
+
+                    <div class="project-card">
+
+                        <h4>Jenkins on EKS</h4>
+
+                        <p>
+
+                            Designed and implemented a Kubernetes-native
+                            CI/CD platform leveraging ephemeral build agents,
+                            shared libraries and policy-driven pipelines —
+                            with SAST integration via Trivy for container image
+                            and dependency vulnerability scanning, enforcing
+                            supply chain security controls across the delivery
+                            pipeline.
+
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Jenkins</span>
+                            <span>EKS</span>
+                            <span>Trivy (SAST)</span>
+                            <span>Supply Chain Security</span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-card">
+
+                        <h4>GitOps Automation</h4>
+
+                        <p>
+
+                            Designed and maintained end-to-end GitOps deployment
+                            pipelines with Git as the authoritative source of truth
+                            for cluster state — enabling declarative environment
+                            management, automated image promotion across environments,
+                            and full auditability of every change through version-controlled
+                            manifests. Focused heavily on pipeline reliability, rollback
+                            safety and drift detection.
+
+                        </p>
+
+                        <div class="project-tags">
+                            <span>ArgoCD</span>
+                            <span>GitOps</span>
+                            <span>Kubernetes</span>
+                            <span>Deploy Pipelines</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="certifications">
+
+                <h3>> certifications.db</h3>
+
+                <div class="projects-grid">
+
+                    <div class="project-card">
+                        <h4>AWS Certified Solutions Architect – Associate</h4>
+                        <div class="project-tags"><span>✓ VERIFIED</span></div>
+                    </div>
+
+                    <div class="project-card">
+                        <h4>AWS Certified Cloud Practitioner</h4>
+                        <div class="project-tags"><span>✓ VERIFIED</span></div>
+                    </div>
+
+                    <div class="project-card">
+                        <h4>Cisco Introduction to Cyber Security</h4>
+                        <div class="project-tags"><span>✓ VERIFIED</span></div>
+                    </div>
+
+                    <div class="project-card">
+                        <h4>Coursera Introduction to Machine Learning</h4>
+                        <div class="project-tags"><span>✓ VERIFIED</span></div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="connect">
+
+                <h3>> connect.sh</h3>
+
+                <div class="content-card">
+
+                    <div class="connect-line">
+                        <span class="conn-prompt">$</span>
+                        <span class="conn-cmd">open</span>
+                        <a href="https://github.com/Kowsalya13" target="_blank">github.com/Kowsalya13</a>
+                        <span class="conn-status">[OPEN]</span>
+                    </div>
+
+                    <div class="connect-line">
+                        <span class="conn-prompt">$</span>
+                        <span class="conn-cmd">open</span>
+                        <a href="https://www.linkedin.com/in/kowsalya-kumar-46672223b" target="_blank">linkedin.com/in/kowsalya-kumar</a>
+                        <span class="conn-status">[OPEN]</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- RIGHT DASHBOARD -->
+
+        <aside class="dashboard">
+
+            <div class="dashboard-card">
+
+                <div class="card-title">
+                    > system.info
+                </div>
+
+                <pre>
+name       : Kowsalya
+role       : DevSecOps Eng.
+domain     : Cloud · Platform
+origin     : PHP → Cloud/DevOps
+exit_code  : <span class="si-val">0</span>
+uptime     : <span class="si-val">always on</span>
+ai_pair    : yes (last word: mine)
+                </pre>
+
+            </div>
+
+            <div class="dashboard-card">
+
+                <div class="card-title">
+                    > current.focus
+                </div>
+
+                <pre>
+Platform Engineering
+Kubernetes
+GitOps
+Cloud Security
+Automation
+Cloud Cost Optimization
+                </pre>
+
+            </div>
+
+            <div class="dashboard-card">
+
+                <div class="card-title">
+                    > environment.vars
+                </div>
+
+                <pre>
+AWS
+EKS
+Jenkins
+ArgoCD
+Docker
+Linux
+Terraform
+                </pre>
+
+            </div>
+
+        </aside>
+
     </div>
 
-    <footer>
-        © 2026 Kowsalya Kumar
-    </footer>
-
-</div>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
